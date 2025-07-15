@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+img {
+  width: 300px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+header {
+  padding: 2rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid red;
+}
+header img {
+  width: 10em;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0 3em;
+  list-style-type: none;
+}
+header nav ul li {
+  position: relative;
+}
+header nav ul li:hover ul {
+  display: block;
+}
+header nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 3em;
+}
+
+.card-container {
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 2rem;
+}
+
+.card {
+  background-color: black;
+  width: 20vw;
+  height: 25vh;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem 0;
+}
+.card img {
+  width: 80%;
+  object-fit: cover;
+}
+.card h3 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

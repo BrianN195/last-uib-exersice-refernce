@@ -1,0 +1,101 @@
+// -----Ich entschuldige mich jetzt schonmal, ich habe einen Tag erwischt an dem ich mich einfach nicht konzentrieren kann.
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+
+// ------------zum besser arbeiten werte gegeben
+img{
+    width: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+// ------------------Header noch nicht fertig!------------------------
+header{
+    padding: 2rem;
+    width: 100vw;
+    display: flex;
+    // gap: 0 30em;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid red;
+    img{
+        width: 10em;
+        aspect-ratio: 1;
+        object-fit: cover;
+        
+    }
+    nav{
+        
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 0 3em;
+            list-style-type: none;
+            li{
+                &:hover{
+                    ul{
+                        display: block;
+                    }
+                }
+                position: relative;
+                ul{
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    
+
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    
+                }
+
+            }
+        }
+    }
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+        text-align: center;
+        padding: 3em;
+    }
+.card-container{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 2rem;
+    
+}
+.card{
+    background-color: black;
+    width: 20vw;
+    height: 25vh;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem 0;
+    img{
+        width: 80%;
+        object-fit: cover;
+    }
+    h3{
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
