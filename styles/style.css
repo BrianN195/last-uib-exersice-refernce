@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -15,17 +16,18 @@ img {
 }
 
 header {
+  background-color: rgb(168, 168, 168);
   padding: 2rem;
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: 1px solid red;
 }
 header img {
   width: 10em;
   aspect-ratio: 1;
   object-fit: cover;
+  border-radius: 50%;
 }
 header nav ul {
   display: flex;
@@ -88,6 +90,57 @@ h1 {
   color: white;
   font-size: 2rem;
   text-align: center;
+}
+.card:hover {
+  animation: cards 1s;
+}
+
+@keyframes cards {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
+}
+.contact-form {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(80, 79, 79);
+  max-width: fit-content;
+  padding: 1em 3em;
+  border: 3px double silver;
+  border-radius: 20px;
+  /* ------------------------ */
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  /* ------------------------------- */
+  /* ------------------------------- */
+  /* ---------------------------------- */
+}
+.contact-form form label {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  /* ----------------------------- */
+}
+.contact-form form label input {
+  font-size: 1.1rem;
+}
+.contact-form form button {
+  margin-top: 1em;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  /* % bei Radius besser für Kreise als Rechtecke */
+}
+.contact-form form button:hover {
+  color: white;
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
