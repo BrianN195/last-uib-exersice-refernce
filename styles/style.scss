@@ -1,4 +1,7 @@
 // -----Ich entschuldige mich jetzt schonmal, ich habe einen Tag erwischt an dem ich mich einfach nicht konzentrieren kann.
+// ------Das hintergrundbild habe ich wissentlich weggelassen da ich nicht wusste was ich dafür nehmen soll. 
+// ------Wie ich ein Hintergrundbild einfüge, es sich nicht wiederholen lasse etc. weiß ich. 
+// ------Dafür habe ich eine kleine Animation eingebaut.
 
 *{
     margin:0;
@@ -8,27 +11,28 @@
 :root{
     font-size: 62.5%;
 }
-
+// --------------auf Variablen habe ich ausnahmsweise mal verzichtet
 // ------------zum besser arbeiten werte gegeben
 img{
     width: 300px;
     aspect-ratio: 1;
     object-fit: cover;
 }
-// ------------------Header noch nicht fertig!------------------------
+// --------------------------------------------------
 header{
+    background-color: rgb(168, 168, 168);
     padding: 2rem;
     width: 100vw;
     display: flex;
     // gap: 0 30em;
     justify-content: space-between;
     align-items: center;
-    outline: 1px solid red;
+    // outline: 1px solid red;
     img{
         width: 10em;
         aspect-ratio: 1;
         object-fit: cover;
-        
+        border-radius: 50%;
     }
     nav{
         
@@ -98,4 +102,55 @@ h1{
         font-size: 2rem;
         text-align: center;
     }
+    &:hover{
+        animation: cards 1s;
+    }
+}
+@keyframes cards{
+    from{
+        scale: 1;
+    }
+    to{
+        scale: 1.1;
+    }
+}
+// ------------------------------------
+.contact-form {
+    margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(80, 79, 79);
+  max-width: fit-content;
+  padding: 1em 3em;
+  border: 3px double silver;
+  border-radius: 20px;
+  /* ------------------------ */
+  form {
+    display: flex;
+    flex-direction: column;
+    /* ------------------------------- */
+    label {
+      display: flex;
+      flex-direction: column;
+      margin: 1em;
+      /* ----------------------------- */
+      input {
+        font-size: 1.1rem;
+      }
+    }
+    /* ------------------------------- */
+    button {
+      margin-top: 1em;
+      padding: 0.5rem 1rem;
+      border: 2px solid black;
+      border-radius: 10px;
+      /* % bei Radius besser für Kreise als Rechtecke */
+    }
+    button:hover {
+      color: white;
+      background-color: black;
+    }
+    /* ---------------------------------- */
+  }
 }
